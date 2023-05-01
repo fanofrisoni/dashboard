@@ -42,6 +42,8 @@ body {
   white-space: nowrap;
   box-shadow:  19px 19px 0px var(--tertiary-color),
              -19px -19px 0px var(--secondary-color);
+  text-shadow: -4px -4px 0px var(--secondary-color),
+  -2px -2px 0px var(--secondary-color);
 }
 .lghda {
   text-decoration: none;
@@ -52,8 +54,6 @@ h1 {
   font-size: clamp(10%, 68px, 6vw);
   flex: 1 1 auto;
   letter-spacing: 6px;
-  text-shadow: -4px -4px 0px var(--secondary-color),
-  -2px -2px 0px var(--secondary-color);
 }
 
 #icon-logo{
@@ -61,8 +61,6 @@ h1 {
   font-size: clamp(10%, 60px, 6vw);
   flex: 1 1 auto;
   text-align: end;
-  text-shadow: -4px -4px 0px var(--secondary-color),
-  -2px -2px 0px var(--secondary-color);
 }
 
 .shortcuts > ul,.settings > ul {
@@ -75,6 +73,7 @@ h1 {
   font-weight: 600;
   box-shadow:  19px 19px 0px var(--tertiary-color),
              -19px -19px 0px var(--secondary-color);
+  white-space: nowrap;
 }
 
 .shortcuts > ul > a > li, .settings > ul > a > li {
@@ -86,4 +85,19 @@ h1 {
   color: var(--font-color);
   text-shadow:  -1px -1px 0px var(--secondary-color),
   -3px -3px 0px var(--secondary-color);
+}
+
+.logoheader:hover {
+  color: var(--base-color);
+  transition: 0.2s ease-in-out;
+  text-shadow: -4px -4px 0px var(--font-color),
+  -2px -2px 0px var(--font-color);
+}
+
+.shortcuts > ul > a > li:hover, .settings > ul > a > li:hover{
+  transform: translateX(20px);
+  transition: 0.29s ease-in-out;
+  color: var(--base-color);
+  text-shadow:  -1px -1px 0px var(--font-color),
+  -3px -3px 0px var(--font-color);
 }
