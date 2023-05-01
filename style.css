@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --base-color:#191825;
+  --primary-color:#865DFF;
+  --secondary-color:#E384FF;
+  --tertiary-color:#FFA3FD;
+  --font-color: #faf4fa;
+  --font-primary: 'Red Hat Display', system-ui, -apple-system, sans-serif;
+  --font-secondary: 'Staatliches', system-ui, -apple-system;
+}
+
+body {
+  background-color: var(--base-color);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.container-aside {
+  background: var(--primary-color);
+  box-shadow:  19px 19px 0px var(--tertiary-color),
+             -19px -19px 0px var(--tertiary-color);
+}
+.container-aside > aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min(110px,1fr) 2fr 2fr;
+  gap: 60px;
+}
+
+.logoheader {
+  color: var(--font-color);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-shadow:  19px 19px 0px var(--tertiary-color),
+             -19px -19px 0px var(--secondary-color);
+}
+.lghda {
+  text-decoration: none;
+}
+h1 {
+  padding: 1.1vh 10px 5px 5px;
+  font-family: var(--font-secondary);
+  font-size: clamp(10%, 68px, 6vw);
+  flex: 1 1 auto;
+  letter-spacing: 6px;
+  text-shadow: -4px -4px 0px var(--secondary-color),
+  -2px -2px 0px var(--secondary-color);
+}
+
+#icon-logo{
+  padding: .56vh 5px 5px 5px;
+  font-size: clamp(10%, 60px, 6vw);
+  flex: 1 1 auto;
+  text-align: end;
+  text-shadow: -4px -4px 0px var(--secondary-color),
+  -2px -2px 0px var(--secondary-color);
+}
+
+.shortcuts > ul,.settings > ul {
+  padding: 5px 0 3px 20px;
+  text-transform: uppercase;
+  list-style: none;
+  font-family: var(--font-secondary);
+  font-size: clamp(10%, 42px, 6vw);
+  color: var(--font-color);
+  font-weight: 600;
+  box-shadow:  19px 19px 0px var(--tertiary-color),
+             -19px -19px 0px var(--secondary-color);
+}
+
+.shortcuts > ul > a > li, .settings > ul > a > li {
+  letter-spacing: 3px;
+  padding: 3px;
+}
+.shortcuts > ul > a, .settings > ul > a {
+  text-decoration: none;
+  color: var(--font-color);
+  text-shadow:  -1px -1px 0px var(--secondary-color),
+  -3px -3px 0px var(--secondary-color);
+}
