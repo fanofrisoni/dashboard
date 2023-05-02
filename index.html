@@ -14,96 +14,122 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
-  <div class="container-aside">
-    <aside>
-      <a class="lghda" href="index.html">
-        <div class="logoheader">
-          <span class="material-icons" id="icon-logo">grid_view</span>
-          <h1>Dashboard</h1>
-        </div>
-      </a>
-      <nav class="shortcuts">
-        <ul>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">home_filled</span>
-              Home
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">face</span>
-              Profile
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">question_answer</span>
-              Messages
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">history</span>
-              History
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">task</span>
-              Tasks
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">groups</span>
-              Communities
-            </li>
-          </a>
-        </ul>
-      </nav>
-      <nav class="settings">
-        <ul>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">settings</span>
-              Settings
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">support_agent</span>
-              Support
-            </li>
-          </a>
-          <a href=#">
-            <li>
-              <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">vpn_lock</span>
-              Privacy
-            </li>
-          </a>
-        </ul>
-      </nav>
-    </aside>
-    <div class="container-main">
-      <main>
-        <header>
-          <nav></nav>
-        </header>
-        <div class="container-items">
-          <section class="projects">
-            <div class="projcontainer"></div>
-          </section>
-          <section class="announcements">
-            <div class="annocontainer"></div>
-          </section>
-          <section class="trending">
-            <div class="trendcontainer"></div>
-          </section>
-        </div>
-      </main>
+  <aside>
+    <div class="container-aside">
+      <aside>
+        <a class="lghda" href="index.html">
+          <div class="logoheader">
+            <span class="material-icons" id="icon-logo">grid_view</span>
+            <h1>Dashboard</h1>
+          </div>
+        </a>
+        <nav class="shortcuts">
+          <ul>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">home_filled</span>
+                Home
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">face</span>
+                Profile
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">question_answer</span>
+                Messages
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">history</span>
+                History
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">task</span>
+                Tasks
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">groups</span>
+                Communities
+              </li>
+            </a>
+          </ul>
+        </nav>
+        <nav class="settings">
+          <ul>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">settings</span>
+                Settings
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">support_agent</span>
+                Support
+              </li>
+            </a>
+            <a href=#">
+              <li>
+                <span class="material-icons" style="font-size: clamp(10%, 34px, 6vw)">vpn_lock</span>
+                Privacy
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </aside>
     </div>
-  </div>
+  </aside>
+  <main>
+    <div class="container-main">
+      <header>
+        <nav class="user-search">
+          <label for="search-bar"><span class="material-icons" id="search-icon">search</span></label>
+          <input type="text" name="search-bar" id="search-bar">
+          <a href="#"><span class="material-icons" id="not-icon">notifications</span></a>
+          <a class="prof" id="prof" href="#">
+            <span class="material-icons" id="profile-icon">person</span>
+            <h3 class="user-name">Fano Frisoni</h3>
+          </a>
+        </nav>
+        <nav class="user-info">
+          <div class="user-greetings">
+            <span class="material-icons" id="greetings-icon">person</span>
+            <h4 class="greet">Hi there, </h4>
+            <h3 class="greet-user">Fano Frisoni</h3>
+          </div>
+          <button>new</button>
+          <button>upload</button>
+          <button>share</button>
+        </nav>
+      </header>
+      <div class="container-items">
+        <section class="projects">
+          <div class="projcontainer">
+            <h5>Projects</h5>
+          </div>
+        </section>
+        <section class="announcements">
+          <div class="annocontainer">
+            <h5>Announcements</h5>
+          </div>
+        </section>
+        <section class="trending">
+          <div class="trendcontainer">
+            <h5>Trending</h5>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>
