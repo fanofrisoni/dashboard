@@ -235,17 +235,17 @@ header {
 
 button {
   position: relative;
-  top: 20px;
+  top: 22px;
   width: min-content;
   height: min-content;
   align-self: center;
   justify-self: center;
-  padding: 10px 30px;
+  padding: 8px 28px;
   font-family: var(--font-primary);
   font-weight: 600;
   color: var(--base-color);
   background-color: var(--primary-color);
-  font-size: clamp(10%, 28px, 6vw);
+  font-size: clamp(10%, 25px, 6vw);
   box-shadow:  -4px -4px 0px var(--tertiary-color), -2px -2px 0px var(--tertiary-color);
   border: none;
 }
