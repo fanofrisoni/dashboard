@@ -352,8 +352,8 @@ footer {
 .projectcard > h3 {
   font-size: max(30px, 1vw);
   height: 20%;
-  color: var(--primary-color);
-  text-shadow:  -3px -3px 0px var(--font-color), -1px -1px 0px var(--font-color);
+  color: var(--font-color);
+  text-shadow:  -3px -3px 0px var(--tertiary-color), -1px -1px 0px var(--tertiary-color);
 }
 
 .projbuttons > .material-icons {
